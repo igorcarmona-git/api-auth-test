@@ -3,7 +3,7 @@ const app = express();
 const port = 3000;
 const db = require("./infra/db");
 const userRouter = require("./routes/userRoute");
-const registerRouter = require("./routes/registerRoute");
+const registerRouter = require("./routes/userRoute");
 
 app.use(express.json());
 
@@ -14,7 +14,6 @@ app.get("/", (req, res) =>{
 });
 
 app.use("/users", userRouter);
-app.use('/register', registerRouter);
 
 app.listen(port, () => {
     console.log(`app on http://localhost:${port}`);

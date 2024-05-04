@@ -1,0 +1,3 @@
+O trecho const salt = bcrypt.genSaltSync(10); é responsável por gerar um "sal" criptográfico usando o algoritmo de geração de sal do bcrypt.
+
+Em criptografia de senha, um "sal" é uma sequência aleatória de bytes que é anexada à senha antes da hash ser computada. A adição de um sal aumenta significativamente a segurança das senhas criptografadas, tornando mais difícil para os atacantes usar tabelas de hash precomputadas (rainbow tables) para quebrar senhas por força bruta.
